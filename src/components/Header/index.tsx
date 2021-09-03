@@ -15,6 +15,7 @@ export function Header() {
       h="100px"
       maxWidth={1480}
       mx="auto"
+      position="relative"
       alignItems="center"
       justifyContent="center"
     >

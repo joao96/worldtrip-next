@@ -1,21 +1,35 @@
-import { Flex, Img, Box, Text } from "@chakra-ui/react";
+import {
+  Flex,
+  Img,
+  Box,
+  Text,
+  useBreakpointValue,
+  IconButton,
+  Icon,
+} from "@chakra-ui/react";
+import { FaCircle } from "react-icons/fa";
 
 interface TravelType {
   image: string;
   alt: string;
   text: string;
+  showImage: boolean;
 }
 
-export function TravelType({ image, text, alt }: TravelType) {
+export function TravelType({ image, text, alt, showImage }: TravelType) {
   return (
     <Flex
-      p={["6", "8"]} //responsividade
-      flexDirection="column"
+      flexDirection={showImage ? "column" : "row"}
       align="center"
       justify="center"
+      minWidth={136}
     >
-      <Img src={image} alt={alt} width="85px" height="85px" />
-      <Text fontSize="sm" fontWeight="bold" mt="4">
+      {showImage ? (
+        <Img src={image} alt={alt} width="85px" height="85px" />
+      ) : (
+        <Icon as={FaCircle} color="orange.900" boxSize="10px" mr="4" />
+      )}
+      <Text fontSize="16px" fontWeight="bold" mt={["0", "0", "0", "4"]}>
         {text}
       </Text>
     </Flex>
