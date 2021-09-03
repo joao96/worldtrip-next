@@ -1,4 +1,4 @@
-import { Flex, Img, Text } from "@chakra-ui/react";
+import { Flex, Img, Text, Button } from "@chakra-ui/react";
 
 interface CarouselContinentItemProps {
   continent: string;
@@ -24,10 +24,14 @@ export function CarouselContinentItem({
         justify="center"
         color="light.700"
       >
-        <Text fontSize="32px" fontWeight="bold">
+        <Text fontSize={["20px", "20px", "32px", "32px"]} fontWeight="bold">
           {continent}
         </Text>
-        <Text fontSize="20px" fontWeight="normal">
+        <Text
+          fontSize={["14px", "14px", "20px", "20px"]}
+          fontWeight="bold"
+          color="light.300"
+        >
           {description}
         </Text>
       </Flex>
