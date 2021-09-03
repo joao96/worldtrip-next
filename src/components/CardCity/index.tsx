@@ -15,7 +15,7 @@ export default function CardCity({
 }: CardCityProps) {
   return (
     <Box
-      width={200}
+      width={256}
       height={280}
       borderRadius="8"
       borderColor="orange.900"
