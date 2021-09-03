@@ -1,16 +1,16 @@
 import { Flex, Img, Text } from "@chakra-ui/react";
 
-interface SwiperContinentItemProps {
+interface CarouselContinentItemProps {
   continent: string;
   description: string;
   image: string;
 }
 
-export function SwiperContinentItem({
+export function CarouselContinentItem({
   continent,
   description,
   image,
-}: SwiperContinentItemProps) {
+}: CarouselContinentItemProps) {
   return (
     <>
       <Flex

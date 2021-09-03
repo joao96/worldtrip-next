@@ -1,7 +1,7 @@
 import { Flex, Img, Box, Text, SimpleGrid } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import { TravelType } from "../components/TravelType";
-import { SwiperContinent } from "../components/SwiperContinent";
+import { CarouselContinent } from "../components/CarouselContinent";
 
 export default function Home() {
   return (
@@ -72,15 +72,15 @@ export default function Home() {
         <Box mx="auto" width="90px" borderColor="dark.700" borderWidth="2px" />
 
         <Flex my="16" mx="auto" maxWidth={840} flexDir="column" align="center">
-          <Text fontSize="32px" fontWeiight="bold">
+          <Text fontSize="32px" fontWeight="bold">
             Vamos nessa?
           </Text>
-          <Text fontSize="32px" fontWeiight="bold">
+          <Text fontSize="32px" fontWeight="bold">
             Então escolha seu continente
           </Text>
         </Flex>
 
-        <SwiperContinent />
+        <CarouselContinent />
       </Flex>
     </>
   );
