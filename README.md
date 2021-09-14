@@ -56,7 +56,7 @@ yarn dev
 Once the server is up, go to http://localhost:3000/ and you should see something like this:
 
 <p align="center">
-  <img src="public/dashgo-dashboard.png" alt="Initial page">
+  <img src="public/images/cover.png" alt="Initial page">
 </p>
 
 <!-- ## :page_facing_up: License
@@ -72,6 +72,8 @@ This project is licensed under the MIT. -->
 ## :sparkles: How To Use
 
 Since this is a static application, it's only goal was to practice with [ChakraUI](https://chakra-ui.com/) while building an attractive application.
+
+You can click on the carousel item at the bottom of the screen in order to navigate to the continent's page.
 
 
 ## Get in touch! :monocle_face:
